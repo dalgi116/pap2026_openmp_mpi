@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
 
   MPI_Bcast(&num_files, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
-  constexpr int R = 5;
+  constexpr int R = 20;
   int omp_threads = omp_get_max_threads();
   int total_threads = numprocs * omp_threads;
 
